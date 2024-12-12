@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import { MovieDetails, MovieList, PageNotFound, SearchResults } from "../pages";
 
 export const AllRoutes = () => {

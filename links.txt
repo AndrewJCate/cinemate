@@ -1,0 +1,35 @@
+API Key:
+789013c2e0390274172c1942a24ec572
+
+Bearer token:
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ODkwMTNjMmUwMzkwMjc0MTcyYzE5NDJhMjRlYzU3MiIsIm5iZiI6MTczNDAyNjc5Mi45MDMsInN1YiI6IjY3NWIyNjI4MTQ3Yjg4M2U0NmE2ZmIzMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.firFUSdX3tFb2QjsECuABbxsegEmnR9YfeC9LSxGI38
+
+Base URL: 
+https://api.themoviedb.org/3
+
+Now Playing:
+/movie/now_playing?
+
+Popular:
+/movie/popular?
+
+Top Rated:
+/movie/top_rated?
+
+Upcoming:
+/movie/upcoming?
+
+Movie:
+/movie/{movie_id}
+
+Search URL:
+/search/movie?query= << teststring >> &include_adult=false
+
+URL Suffix:
+&language=en-US&page=1 HTTP/1.1
+
+AUTH:
+Accept: application/json
+Authorization: Bearer << token >>
+Host: api.themoviedb.org
+

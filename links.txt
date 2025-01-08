@@ -27,6 +27,7 @@ Search URL:
 
 URL Suffix:
 &language=en-US&page=1 HTTP/1.1
+api_key=789013c2e0390274172c1942a24ec572
 
 AUTH:
 Accept: application/json

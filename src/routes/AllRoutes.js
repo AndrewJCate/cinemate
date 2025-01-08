@@ -3,7 +3,8 @@ import { MovieDetails, MovieList, PageNotFound, SearchResults } from "../pages";
 
 export const AllRoutes = () => {
   return (
-    <Routes>
+    <main>
+      <Routes>
         <Route path="" element={ <MovieList /> } />
         <Route path="movies/toprated" element={ <MovieList /> } />
         <Route path="movies/popular" element={ <MovieList /> } />
@@ -13,6 +14,8 @@ export const AllRoutes = () => {
         <Route path="movie/:id" element={ <MovieDetails /> } />
 
         <Route path="*" element={ <PageNotFound /> } />
-    </Routes>
+      </Routes>
+    </main>
+    
   )
 }

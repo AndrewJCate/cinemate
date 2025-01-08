@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-main {
-    max-width: 1280px;
-    margin: auto;
-    height: 89vh;
-    padding: 10px;
+.dark #logo {
+    filter: brightness(0) saturate(100%) invert(93%) sepia(13%) saturate(93%) hue-rotate(177deg) brightness(90%) contrast(91%);
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import Logo from '../assets/images/logo.png';
 import { Link, NavLink } from 'react-router-dom';
+
+import Logo from '../assets/images/logo.png';
 
 export const Header = () => {
 
@@ -13,12 +14,8 @@ export const Header = () => {
 
   useEffect( () => {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    }
-    else {
-      document.documentElement.classList.remove("dark");
-    }
+    if (darkMode) document.documentElement.classList.add("dark");
+    else document.documentElement.classList.remove("dark");
   }, [darkMode] );
 
   return (
@@ -73,7 +70,7 @@ export const Header = () => {
 
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800  dark:border-gray-700 dark:text-gray-300">
               <li>
-                <NavLink to="/" className={ ({isActive}) => isActive ? activeClass : inactiveClass } end>Home</NavLink>
+                <NavLink to="/" className={ ({isActive}) => isActive ? activeClass : inactiveClass } end>Now Playing</NavLink>
               </li>
               <li>
                 <NavLink to="/movies/popular" className={ ({isActive}) => isActive ? activeClass : inactiveClass }>Popular</NavLink>

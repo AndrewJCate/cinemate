@@ -1,12 +1,8 @@
 import { MovieCard } from "../components/MovieCard"
 import { useFetch } from "../hooks/useFetch";
 
-export const MovieList = () => {
-
-  const BASE_URL = "https://api.themoviedb.org/3/movie/";
-  const KEY = "api_key=789013c2e0390274172c1942a24ec572";
-
-  const { data: movies } = useFetch(BASE_URL + "now_playing?" + KEY);
+export const MovieList = ( {path} ) => {
+  const { data: movies } = useFetch(path);
 
   return (
     <main>

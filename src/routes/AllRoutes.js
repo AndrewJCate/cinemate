@@ -5,13 +5,13 @@ export const AllRoutes = () => {
   return (
     <main>
       <Routes>
-        <Route path="" element={ <MovieList /> } />
-        <Route path="movies/toprated" element={ <MovieList /> } />
-        <Route path="movies/popular" element={ <MovieList /> } />
-        <Route path="movies/upcoming" element={ <MovieList /> } />
-        <Route path="movies/search" element={ <SearchResults /> } />
+        <Route path="" element={ <MovieList path="/movie/now_playing" /> } />
+        <Route path="movies/toprated" element={ <MovieList path="/movie/top_rated" /> } />
+        <Route path="movies/popular" element={ <MovieList path="/movie/popular" /> } />
+        <Route path="movies/upcoming" element={ <MovieList path="/movie/upcoming" /> } />
+        <Route path="movies/search" element={ <SearchResults path="" /> } />
 
-        <Route path="movie/:id" element={ <MovieDetails /> } />
+        <Route path="movie/:id" element={ <MovieDetails path="" /> } />
 
         <Route path="*" element={ <PageNotFound /> } />
       </Routes>

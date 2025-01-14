@@ -1,6 +1,6 @@
 export { MovieDetails } from "./MovieDetails";
 export { MovieList } from "./MovieList";
 
-export { SearchResults } from "./SearchResults";
+export { Search } from "./Search";
 
 export { PageNotFound } from "./PageNotFound";

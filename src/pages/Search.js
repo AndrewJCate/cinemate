@@ -1,0 +1,27 @@
+import { useSearchParams } from "react-router-dom";
+import { MovieCard } from "../components/MovieCard";
+import { useFetch } from "../hooks/useFetch";
+
+export const Search = ({path}) => {
+  const [searchParams] = useSearchParams();
+  const queryString = searchParams.get("query");
+
+  const { data: movies } = useFetch(path, queryString);
+
+  return (
+    <main>
+      <div >
+        <p className="text-3xl font-semibold text-gray-900 dark:text-gray-300 my-5 pl-5">
+          { ( movies.length === 0 ) ? "No movies found." : `Results for "${queryString}":`}
+        </p>
+      </div>
+      <section className="py-5">
+        <div className="flex justify-start flex-wrap gap-6 pl-5">
+          { movies.map( (movie) => (
+            <MovieCard key={movie.id} movie={movie} />
+          )) }
+        </div>
+      </section>
+    </main>
+  )
+}

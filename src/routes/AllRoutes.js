@@ -16,6 +16,5 @@ export const AllRoutes = () => {
         <Route path="*" element={ <PageNotFound /> } />
       </Routes>
     </main>
-    
   )
 }

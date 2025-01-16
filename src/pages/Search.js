@@ -11,12 +11,12 @@ export const Search = ({path}) => {
   return (
     <main>
       <div >
-        <p className="text-3xl font-semibold text-gray-900 dark:text-gray-300 my-5 pl-5">
+        <p className="text-3xl font-semibold text-dark-gray dark:text-light-gray my-5 pl-5">
           { ( movies.length === 0 ) ? "No movies found." : `Results for "${queryString}":`}
         </p>
       </div>
       <section className="py-5">
-        <div className="flex justify-start flex-wrap gap-6 pl-5">
+        <div className="flex justify-center xl:justify-start flex-wrap gap-6 pl-5">
           { movies.map( (movie) => (
             <MovieCard key={movie.id} movie={movie} />
           )) }

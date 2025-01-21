@@ -12,6 +12,18 @@ module.exports = {
                 'hover-yellow': 'rgb(250 204 21)',
                 'hover-blue': 'rgb(59 130 246)',
             },
+            fontSize: {
+                '4.5xl': [
+                    '2.5rem',
+                    { lineHeight: '2.5rem', },
+                ]
+            },
+            screens: {
+                'xmd': '920px',
+            },
+            margin: {
+                '5.45': '1.45rem',
+            }
         },
     },
     plugins: [],

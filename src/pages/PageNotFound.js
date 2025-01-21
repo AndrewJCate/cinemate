@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
+import { useUpdateTitle } from '../hooks/index';
 
-export const PageNotFound = () => {
+export const PageNotFound = ({title}) => {
+
+  useUpdateTitle(title);
+
   return (
     <main>
       <section>

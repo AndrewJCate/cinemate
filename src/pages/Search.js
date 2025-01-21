@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import { MovieCard } from "../components/MovieCard";
-import { useFetch } from "../hooks/useFetch";
+import { useFetch, useUpdateTitle } from "../hooks/index";
 import { useEffect, useState } from "react";
 
 export const Search = ({path}) => {
@@ -10,6 +10,8 @@ export const Search = ({path}) => {
   useEffect(() => {
     setQueryString(searchParams.get("query"));
   }, [searchParams]);
+
+  useUpdateTitle(`Search "${queryString}"`);
 
   const { data: movies } = useFetch(path, queryString);
 

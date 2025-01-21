@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useUpdateTitle } from "../hooks/index";
 import DefaultImage from "../assets/images/default-movie-poster.jpg";
 
 export const MovieDetails = ({path}) => {
@@ -22,6 +23,8 @@ export const MovieDetails = ({path}) => {
     }
     fetchMovie();
   }, [path, KEY, params.id]);
+
+  useUpdateTitle(title);
 
   const USDollar = new Intl.NumberFormat('en-US', {
     style: 'currency',

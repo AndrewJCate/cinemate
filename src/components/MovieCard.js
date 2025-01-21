@@ -10,7 +10,7 @@ export const MovieCard = ({movie}) => {
   return (
       <div className="max-w-sm bg-gray-200 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-medium-gray">
           <Link to={`/movie/${id}`}>
-              <img className="rounded-t-lg" src={IMAGE_PATH} alt={`${title} poster`} />
+              <img className="rounded-t-lg max-h-sm" src={IMAGE_PATH} alt={`${title} poster`} />
           </Link>
           <div className="p-5">
               <Link to={`/movie/${id}`}>

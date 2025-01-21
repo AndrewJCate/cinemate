@@ -63,7 +63,7 @@ export const MovieDetails = ({path}) => {
               </svg>
               <p className="ms-1 text-dark-gray dark:text-light-gray"><span className="font-bold mr-1">Rating: </span>{vote_average}</p>
               <span className="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
-              <span href="#" className="text-dark-gray dark:text-light-gray">{vote_count} reviews</span>
+              <span className="text-dark-gray dark:text-light-gray">{vote_count} reviews</span>
             </div>
             <p className="py-1" id="runtime">
               <span className="font-bold mr-3">Runtime:</span>

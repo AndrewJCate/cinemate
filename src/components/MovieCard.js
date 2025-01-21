@@ -14,9 +14,9 @@ export const MovieCard = ({movie}) => {
           </Link>
           <div className="p-5">
               <Link to={`/movie/${id}`}>
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-dark-gray dark:text-light-gray">{title}</h5>
+                  <h5 className="mb-3 text-2xl font-bold tracking-tight text-dark-gray dark:text-light-gray">{title}</h5>
               </Link>
-              <p className="mb-3 font-normal text-medium-gray dark:text-gray-400">{overview}</p>
+              <p className="font-normal text-medium-gray dark:text-gray-400">{overview}</p>
           </div>
     </div>
   )

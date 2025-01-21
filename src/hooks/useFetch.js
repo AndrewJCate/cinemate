@@ -15,7 +15,7 @@ export const useFetch = (path, query="") => {
             setData(json.results);
         }
         fetchData();
-    }, [path] );
+    }, [path, SEARCH, KEY] );
 
     return ( {data} );
 }
